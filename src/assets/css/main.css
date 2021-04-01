@@ -1,0 +1,21 @@
+:root {
+    --primary-black: #131313;
+    --primary-gray: #D3DCE6;
+}
+
+.primary-gray {
+    color: var(--primary-gray);
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
