@@ -2,7 +2,7 @@
   <div>
     <div class="card-holder">
       <!-- Logo - display icon here-->
-      <div class="flex">
+      <div class="flex items-center">
         <!-- Logo here-->
         <div>
           <img
@@ -64,7 +64,7 @@
 
         <!-- Cvv here-->
         <div class="flex items-center cvv">
-          <p class="font-7 sec-gray" v-if="!isVisible">cvv</p>
+          <p class="font-7 sec-gray" v-if="!isVisible">CVV</p>
           <input
             :type="isVisible ? 'text' : 'password'"
             value="455"
@@ -104,6 +104,7 @@ export default {
   background-color: var(--primary-black);
   padding: 39px 30px 0px 30px;
   border-radius: 20px;
+  width: inherit;
 }
 
 a {
@@ -115,7 +116,7 @@ a {
 }
 
 .card-holder > .digits input {
-  width: 120px;
+  width: 12%;
   background: inherit;
   border: none;
   font-size: 1.438rem;

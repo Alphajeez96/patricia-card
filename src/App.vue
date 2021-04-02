@@ -24,16 +24,10 @@ export default {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.center{
- width: 499px;
-height: 305px;
-        position: absolute; /*Can also be `fixed`*/
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-
-       
+.center {
+  width: 499px;
+  height: 305px;
+  margin: 50px auto;
+  padding: 0px 10px;
 }
 </style>
