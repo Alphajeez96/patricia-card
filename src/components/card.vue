@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="card-holder">
+    <div class="card-holder" :class="{ switch: !isVisible }">
       <!-- Logo - display icon here-->
       <div class="flex items-center">
         <!-- Logo here-->
@@ -98,13 +98,17 @@ export default {
 
 <style scoped>
 .card-holder {
-  background-image: url("../assets/img/patricia-icon.png");
+  background-image: url("../assets/img/patricia-icon-2.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-color: var(--primary-black);
   padding: 39px 30px 0px 30px;
   border-radius: 20px;
   width: inherit;
+}
+
+.card-holder.switch {
+  background-image: url("../assets/img/patricia-icon.png");
 }
 
 a {
