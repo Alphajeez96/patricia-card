@@ -1,15 +1,32 @@
 :root {
     --primary-black: #131313;
     --primary-gray: #D3DCE6;
+    --sec-gray: #9DA8B6;
 }
 
 .primary-gray {
     color: var(--primary-gray);
 }
 
+.sec-gray {
+    color: var(--sec-gray)
+}
+
+.font-14 {
+    font-size: 0.875rem;
+}
+
+.font-7 {
+    font-size: 0.438rem;
+}
+
 .flex {
     display: flex;
     flex-direction: row;
+}
+
+.items-center {
+    align-items: center;
 }
 
 .justify-between {
