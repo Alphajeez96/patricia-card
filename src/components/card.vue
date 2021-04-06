@@ -17,17 +17,8 @@
         <div class="ml-auto">
           <a @click="isVisible = !isVisible">
             <img
-              v-if="isVisible"
-              src="@/assets/img/vectors/Mask.svg"
+              :src="isVisible ? vector.mask1 : vector.mask2"
               height="17.92"
-              width="25.59"
-              alt="Mask"
-            />
-
-            <img
-              v-else
-              src="@/assets/img/vectors/Mask-1.svg"
-              height="23.03"
               width="25.59"
               alt="Mask"
             />
@@ -83,6 +74,10 @@ export default {
 
   data: () => ({
     isVisible: true,
+    vector: {
+      mask1: require("@/assets/img/vectors/Mask.svg"),
+      mask2: require("@/assets/img/vectors/Mask-1.svg"),
+    },
   }),
 
   methods: {
